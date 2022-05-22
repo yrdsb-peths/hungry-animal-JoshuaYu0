@@ -20,5 +20,19 @@ public class MyWorld extends World
         // Elephant object
         Elephant elephant = new Elephant();
         addObject(elephant, 300, 350);
+        
+        // Apple Object
+        createApple();
+    }
+    
+    /**
+     * Ramdomize apple spawn location.
+     */
+    public void createApple()
+    {
+        Apple apple = new Apple();
+        int x = Greenfoot.getRandomNumber(600);
+        int y = 0;
+        addObject(apple, x, y);
     }
 }
